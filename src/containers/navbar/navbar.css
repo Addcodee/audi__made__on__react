@@ -1,0 +1,149 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1.5rem 6rem;
+
+  font-size: 17px;
+}
+
+.navbar__links {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__links img {
+  width: 69px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.navbar__links_container {
+  flex: 0.75;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+  color: #666666;
+  cursor: pointer;
+}
+
+.navbar__sign {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__sign_btn {
+  flex: 0.75;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__sign svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.navbar__sign_search-icon {
+  transform: scaleX(-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__sign_btn button {
+  width: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.navbar__sign_user-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+}
+
+.navbar__menu {
+  display: none;
+}
+
+.navbar__menu-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+}
+
+.navbar__menu_header{
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__menu_header-search svg{
+  width: 1.2rem;
+  height: 1.2rem;
+  transform: scaleX(-1);
+}
+
+.navbar__menu_header-close svg{
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.navbar__menu-links{
+  padding: 2rem;
+  color: #666666;
+}
+
+.navbar__menu-link{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1439px) {
+  .navbar {
+    padding: 1.5rem 2rem;
+  }
+
+  .navbar__links {
+    justify-content: center;
+  }
+
+  .navbar__links_container {
+    display: none;
+  }
+
+  .navbar__sign_user-icon {
+    margin: 0;
+  }
+
+  .navbar__sign{
+    justify-content: center;
+  }
+
+  .navbar__sign_btn {
+    display: none;
+  }
+
+  .navbar__sign_search-icon {
+    display: none;
+  }
+
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+  }
+}
