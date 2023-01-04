@@ -18,6 +18,10 @@ a{
   text-decoration: none;
 }
 
+ul{
+  list-style: none;
+}
+
 .section__padding {
   padding: 4rem 4rem;
 }
