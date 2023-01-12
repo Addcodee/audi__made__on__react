@@ -1,64 +1,48 @@
-import React, { useState } from "react";
 import "./header.css";
-import { SlArrowDown } from "react-icons/sl";
+import HeaderDropdown from "./HeaderDropdown";
+import { MdArrowForwardIos } from "react-icons/md";
+import { useContext, useState } from "react";
+import { productContext } from "../../ProductContextProvider";
 
 const Header = () => {
-  const [selectClicked, setSelectClicked] = useState("");
-  const [caretRotate, setCaretRotate] = useState("");
-  const [menu, setMenu] = useState("");
 
-  const [active, setActive] = useState("");
-
-  const options = [
-    "e-tron S",
-    "e-tron Sportback",
-    "e-tron S Sportback",
-  ];
+  // const {number} = useContext(productContext)
 
   return (
-    <div className="header">
-      <div className="header__title">
+    <div className="header" id="header">
+      <div className="header__title section__padding">
         <h1>Die besten Vorsätze fahren elektrisch</h1>
         <button type="button">Mehr erfahren</button>
       </div>
-      <div className="header__black-line"></div>
-      <div className="header__choose">
-        <div className="dropdown">
-          <div
-            onClick={() => {
-              setSelectClicked(!selectClicked);
-              setCaretRotate(!caretRotate);
-              setMenu(!menu);
-            }}
-            className={selectClicked ? "select-clicked" : "select"}
-          >
-            <div className="selected">
-              <span>{active ? active.value : "choose your car"}</span>
-            </div>
-            <div className={caretRotate ? "caret-rotate" : "caret"}>
-              <SlArrowDown />
-            </div>
+      <div className="header__filter">
+        <div className="header__filter_comment">
+          <p>
+            Bei dem gezeigten Fahrzeug handelt es sich um ein
+            Konzeptfahrzeug, das nicht als Serienfahrzeug verfügbar
+            ist.
+          </p>
+        </div>
+        <div className="header__filter_dropdown">
+          <div className="header__filter_dropdown-title">
+            <h2>Direkt verfügbare</h2>
           </div>
-          {menu && (
-            <ul className={menu ? "menu-open" : "menu"}>
-              {options.map((value, index) => (
-                <li
-                  onClick={() => {
-                    setSelectClicked(!selectClicked);
-                    setCaretRotate(!caretRotate);
-                    setMenu(!menu);
-                    setActive({ value });
-                  }}
-                  key={index}
-                >
-                  {value}
-                </li>
-              ))}
-            </ul>
-          )}
+          <HeaderDropdown />
+          <div className="header__filter_dropdown-options">
+            <p>
+              <span>12</span>neue <MdArrowForwardIos />
+            </p>
+            <p>
+              <span>65</span>gebrauchte <MdArrowForwardIos />
+            </p>
+          </div>
+        </div>
+        <div className="header__filter_features">
+          <p>
+            Kraftstoffverbrauch kombiniert1: 6,8-3,9 l/100 km
+            CO2-Emissionen kombiniert1: 155-99 g/km
+          </p>
         </div>
       </div>
-      <div className="header__choose-info">sdv</div>
     </div>
   );
 };

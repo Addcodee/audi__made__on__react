@@ -1,0 +1,152 @@
+.offer {
+  margin: 4rem 0;
+}
+
+.offer__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 6rem;
+}
+
+.offer__title h1 {
+  font-size: 56px;
+  font-weight: 600;
+  width: 60%;
+  margin-bottom: 1.5rem;
+}
+
+.offer__title p {
+  font-size: 18px;
+  margin-bottom: 3rem;
+  color: #333333;
+}
+
+.offer__title-click {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.offer__title-click:hover {
+  color: rgba(0, 0, 0, 0.688);
+}
+
+.offer__title-click:hover .arrow-right {
+  transform: translate(5px);
+  transition: 0.3s;
+}
+
+.offer__slider {
+  display: flex;
+}
+
+.offer__slider-img img {
+  height: 85vh;
+}
+
+.offer__slider-info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.offer__slider-info h2 {
+  font-size: 30px;
+  text-shadow: none;
+  font-weight: 400;
+  color: #333333;
+  margin: 1rem 0;
+}
+
+.offer__slider-info p {
+  font-size: 18px;
+  color: #333333;
+}
+
+.offer__slider-info_btns {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  cursor: pointer;
+}
+
+.offer__slider-info_btns button {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 18px;
+}
+
+.offer__slider-info_active {
+  font-weight: 800;
+  text-decoration: underline 2px;
+  cursor: pointer;
+}
+
+.arrows {
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+@media screen and (max-width: 1025px) {
+  .offer__title h1 {
+    font-size: 42px;
+  }
+
+  .offer__title p {
+    font-size: 16px;
+  }
+
+  .offer__slider-img img {
+    height: 70vh;
+  }
+
+  .offer__slider-info_text h2 {
+    font-size: 26px;
+  }
+
+  .offer__slider-info_text p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .offer__title {
+    padding: 4rem 2rem;
+  }
+
+  .offer__slider-info {
+    padding: 1rem;
+  }
+
+  .offer__title h1 {
+    font-size: 30px;
+  }
+  .offer__slider-img img {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .offer__title {
+    padding: 2rem 1rem;
+  }
+  .offer__title h1 {
+    font-size: 22px;
+  }
+  .offer__title p {
+    font-size: 14px;
+  }
+  .offer__slider {
+    flex-direction: column-reverse;
+  }
+  .offer__slider-img img {
+    width: 100%;
+    height: 100%;
+  }
+}

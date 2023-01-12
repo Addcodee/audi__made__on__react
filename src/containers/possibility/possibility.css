@@ -1,0 +1,113 @@
+.possibility {
+  padding: 4rem 10rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.possibility__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 40%;
+}
+
+.possibility__info h1 {
+  font-size: 46px;
+  font-weight: 800;
+}
+
+.possibility__info p {
+  margin-top: 2rem;
+  font-size: 18px;
+}
+
+.possibility__info p:nth-child(odd) {
+  font-size: 15px;
+}
+
+.possibility__info button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  width: 60%;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 18px;
+  transition: 0.15s;
+  cursor: pointer;
+}
+
+.possibility__info button:hover {
+  color: rgba(0, 0, 0, 0.505);
+}
+
+.possibility__img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.possibility__img img {
+  height: 32rem;
+  width: 32rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.178);
+}
+
+@media screen and (max-width: 1250px) {
+  .possibility {
+    padding: 4rem 4rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .possibility__info h1 {
+    font-size: 34px;
+  }
+  .possibility__info p {
+    font-size: 16px;
+  }
+
+  .possibility__info p:nth-child(odd) {
+    font-size: 13px;
+  }
+  .possibility__img img {
+    width: 30rem;
+    height: 30rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .possibility__info h1 {
+    font-size: 30px;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .possibility {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 4rem 3rem;
+  }
+  .possibility__img img {
+    width: 100%;
+    height: 100%;
+  }
+  .possibility__info {
+    width: 95%;
+  }
+  .possibility__info h1 {
+    font-size: 36px;
+  }
+  .possibility__info button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 477px) {
+  .possibility {
+    padding: 2rem 1rem;
+  }
+  .possibility__info button {
+    width: 100%;
+  }
+}

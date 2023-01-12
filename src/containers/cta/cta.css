@@ -1,0 +1,165 @@
+.cta {
+  background-image: url(../../assets/audi-features.jpg);
+  height: 78vh;
+  padding: 4rem 6rem;
+  margin-top: 4rem;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.231),
+    0 -1px 10px rgba(0, 0, 0, 0.231);
+  display: flex;
+  align-items: center;
+}
+
+.cta__container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: white;
+}
+
+.cta__container h1 {
+  font-size: 58px;
+}
+
+.cta__container h2 {
+  font-size: 46px;
+}
+
+.cta__container h1,
+h2 {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.441);
+}
+
+.cta__container button {
+  width: 40%;
+  padding: 1rem 2rem;
+  font-size: 18px;
+  background-color: white;
+  border: none;
+  transition: 0.3s;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.cta__container button:hover {
+  opacity: 1;
+}
+
+.cta__container_radio {
+  margin: 2rem 0;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.cta__container_radio div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cta__container_radio span {
+  font-size: 18px;
+}
+
+.cta__container_radio-custom {
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.cta__container_radio-custom span {
+  width: calc(80% - 6px);
+  height: calc(80% - 6px);
+  border-radius: 50%;
+  background-color: white;
+  display: inline-block;
+  transform: scale(50%);
+  transition: opacity 0.3s ease;
+}
+
+.cta__container_radio-custom:hover span {
+  transform: scale(100%);
+}
+
+.cta__container_radio-custom input {
+  display: none;
+}
+
+.cta__container_radio-custom input:checked + span {
+  transform: scale(100%);
+}
+
+@media screen and (max-width: 1200px) {
+  .cta__container h1 {
+    font-size: 50px;
+  }
+  .cta__container h2 {
+    font-size: 40px;
+  }
+  .cta__container button {
+    font-size: 16px;
+  }
+  .cta__container_radio {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .cta__container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .cta {
+    padding: 4rem 4rem;
+  }
+  .cta__container {
+    width: 90%;
+  }
+  .cta__container_radio {
+    flex-direction: column;
+  }
+  .cta__container_radio div {
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .cta__container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .cta__container h1 {
+    font-size: 40px;
+  }
+  .cta__container h2 {
+    font-size: 30px;
+  }
+  .cta__container button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cta__container h1 {
+    font-size: 34px;
+  }
+  .cta__container h2 {
+    font-size: 24px;
+  }
+  .cta {
+    padding: 4rem 2rem;
+  }
+}

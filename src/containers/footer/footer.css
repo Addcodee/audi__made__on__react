@@ -1,0 +1,134 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 2rem 6rem;
+  margin-top: 10rem;
+}
+
+.footer__back-to-begin {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__back-to-begin span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 13%;
+}
+
+.footer__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__details h4 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.footer__details li {
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.footer__social-nets {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__social-nets div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 18%;
+}
+
+hr {
+  margin: 2rem 0;
+  opacity: 0.2;
+  border-top: 0;
+}
+
+.footer__rights {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__rights-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+  font-size: 14px;
+}
+
+.footer__rights-links ul {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.footer__rights p {
+  margin-bottom: 2rem;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.footer__rights span {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.footer__rights-info {
+  display: flex;
+}
+
+.footer__rights-info div:first-child {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 1025px) {
+  .footer {
+    padding: 2rem 4rem;
+  }
+  .footer__back-to-begin span {
+    width: 18%;
+  }
+  .footer__details {
+    flex-wrap: wrap;
+  }
+  .footer__details_list {
+    margin-bottom: 2rem;
+    width: 30%;
+  }
+  .footer__rights-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer__rights-links h5 {
+    margin-bottom: 1.5rem;
+  }
+  .footer__rights-links ul {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .footer{
+    padding: 2rem;
+  }
+  .footer__back-to-begin span {
+    width: 24%;
+  }
+  .footer__rights-links ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .footer__rights-links li {
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}

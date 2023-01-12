@@ -43,6 +43,7 @@
 .navbar__sign svg {
   width: 1.4rem;
   height: 1.4rem;
+  cursor: pointer;
 }
 
 .navbar__sign_search-icon {
